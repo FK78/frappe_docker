@@ -2,7 +2,7 @@ version: "3"
 
 services:
   backend:
-    image: frappe/erpnext:latest
+    image: ghcr.io/fk78/erpnext:latest
     networks:
       - frappe_network
     deploy:
@@ -19,7 +19,7 @@ services:
     platform: linux/arm64
 
   configurator:
-    image: frappe/erpnext:latest
+    image: ghcr.io/fk78/erpnext:latest
     networks:
       - frappe_network
     deploy:
@@ -49,7 +49,7 @@ services:
     platform: linux/arm64
 
   create-site:
-    image: frappe/erpnext:latest
+    image: ghcr.io/fk78/erpnext:latest
     networks:
       - frappe_network
     deploy:
@@ -106,7 +106,7 @@ services:
     platform: linux/arm64
 
   frontend:
-    image: frappe/erpnext:latest
+    image: ghcr.io/fk78/erpnext:latest
     networks:
       - frappe_network
     depends_on:
@@ -133,7 +133,7 @@ services:
     platform: linux/arm64
 
   queue-long:
-    image: frappe/erpnext:latest
+    image: ghcr.io/fk78/erpnext:latest
     networks:
       - frappe_network
     deploy:
@@ -150,7 +150,7 @@ services:
     platform: linux/arm64
 
   queue-short:
-    image: frappe/erpnext:latest
+    image: ghcr.io/fk78/erpnext:latest
     networks:
       - frappe_network
     deploy:
@@ -187,7 +187,7 @@ services:
     platform: linux/arm64
 
   scheduler:
-    image: frappe/erpnext:latest
+    image: ghcr.io/fk78/erpnext:latest
     networks:
       - frappe_network
     deploy:
@@ -202,7 +202,7 @@ services:
     platform: linux/arm64
 
   websocket:
-    image: frappe/erpnext:latest
+    image: ghcr.io/fk78/erpnext:latest
     networks:
       - frappe_network
     deploy:
